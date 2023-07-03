@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "title": "Instrumental Learning Academy",
+        "cat": "MERN",
+        "description":"Instrumental Learning Academy is a responsive role-based app where anyone can learn music instruments from Expert Instructors. It provides a user-friendly interface for students to explore various instrument classes, instructors, and purchase (Stripe API) classes for learning.",
+        "live_url": "https://instrumental-learning-academy.web.app/home",
+        "client_repo": "https://github.com/riasat97/Instrument-learning-acadmey-client",
+        "server_repo": "https://github.com/riasat97/Instrument-learning-acadmey-server",
+        "technologies": [
+            "React.js",
+            "Express.js",
+            "Node.js",
+            "MongoDB",
+            "Tailwind CSS",
+            "Daisy UI",
+            "Vercel",
+            "Firebase",
+            "Private route",
+            "Context API",
+            "TanStack query",
+            "Axios",
+            "Stripe"
+        ],
+        "images": [
+            "https://i.ibb.co/3CPdSCP/1.png",
+            "https://i.ibb.co/G0fsM3K/2.png",
+            "https://i.ibb.co/FVtwM9N/3.png",
+            "https://i.ibb.co/8jxckyq/4.png",
+            "https://i.ibb.co/TP11f3M/5.png",
+            "https://i.ibb.co/Tg6QNtf/6.png"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "LeGO Shop",
+        "cat": "MERN",
+        "description":"LeGO Shop is a toy market place where an authenticated user can add/update/view/delete toys, search, sort toys and shop toys based on category.",
+        "live_url": "https://legoshop-1768a.web.app/home",
+        "client_repo": "https://github.com/riasat97/lego-shop-client",
+        "server_repo": "https://github.com/riasat97/lego-shop-server",
+        "technologies": [
+            "React.js",
+            "Express.js",
+            "Node.js",
+            "MongoDB",
+            "Tailwind CSS",
+            "Daisy UI",
+            "Vercel",
+            "Firebase",
+            "Private route",
+            "Context API"
+        ],
+        "images": [
+            "https://i.ibb.co/FKJXnsX/1.png",
+            "https://i.ibb.co/Zf4vsbk/2.png",
+            "https://i.ibb.co/0V6Dz2F/3.png",
+            "https://i.ibb.co/6Yv64XJ/4.png",
+            "https://i.ibb.co/sbNTDsz/5.png"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Chef Chats",
+        "cat": "MERN",
+        "description":"This project is a responsive React.js app where anyone can learn top recipes of Thailand from some of the famous chefs. Authenticated users can view each chef's recipes with details like the recipe name, ingredients, cooking method, rating, and they can also add recipes as their favorite to view later.",
+        "live_url": "https://chef-recipe-hunter-7c9bd.web.app/home",
+        "client_repo": "https://github.com/riasat97/chef-chats",
+        "server_repo": "",
+        "technologies": [
+            "React.js",
+            "Express.js",
+            "Node.js",
+            "Tailwind CSS",
+            "Daisy UI",
+            "Vercel",
+            "Firebase",
+            "Private route",
+            "Context API"
+        ],
+        "images": ["https://i.ibb.co/SKKWdD8/1.png","https://i.ibb.co/vvJp0S5/2.png","https://i.ibb.co/r0G8kW8/3.png","https://i.ibb.co/rvYcNr4/4.png"]
+    },
+    {
+        "id": 4,
+        "title": "Sheikh Russel Digital Lab (srdl.gov.bd)",
+        "cat": "LAMP",
+        "description":"Srdl.gov.bd is a national platform for distributing computer labs. This system is able to accept and manage computer lab applications from all over the nation, assign computer labs to 5,000 educational institutions based on the government of Bangladesh's stated criteria. Review these computer lab applications, and verify the criteria using an automated approach. Lately added 36k trainees in training module",
+        "live_url": "https://srdl.gov.bd/",
+        "client_repo": "",
+        "server_repo": "",
+        "manual":["https://drive.google.com/file/d/1sjIe5_iFUbJu-LzLnQzPoJhUj7-8yWTF/view","https://drive.google.com/file/d/1Mtnlfbx6FYKynL8JUP0exJWk5pm38drC/view"],
+        "presentation":"https://www.youtube.com/watch?v=9i3gX0rQLb8&ab_channel=Riasatraihannoor",
+        "embedded": "<iframe width='560' height='315' src='https://www.youtube.com/embed/9i3gX0rQLb8' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+        "technologies": ["Rest API", "JavaScript", "Ajax", "jQuery", "Bootstrap", "Laravel", "MySQL","SMS Gateway"],
+        "images": ["https://i.ibb.co/vBFVWM8/1.png","https://i.ibb.co/cYMkN70/2.png","https://i.ibb.co/ygzVhC6/3.png","https://i.ibb.co/5kJCNfD/4.png","https://i.ibb.co/pjzJN0P/5.png","https://i.ibb.co/vmJTGKQ/6.png"]
+
+    }
+]
