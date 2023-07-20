@@ -23,7 +23,13 @@ const Navbar = ({ darkMode, isOpen, toggleMenu, toggleTheme }) => {
               <a href='#about'>About</a>
             </li>
             <li className='cursor-pointer hover:text-blue-500'>
-              <a href='#projects'>Projects</a>
+              <a href='#shopService'>সেবা</a>
+            </li>
+            <li className='cursor-pointer hover:text-blue-500'>
+              <a href='#equipments'>সরঞ্জাম</a>
+            </li>
+            <li className='cursor-pointer hover:text-blue-500'>
+              <a href='#agentship'>এজেন্টশিপ</a>
             </li>
             <li className='cursor-pointer hover:text-blue-500'>
               <a href='#hireMe'>Hire Me</a>

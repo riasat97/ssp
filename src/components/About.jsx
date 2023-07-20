@@ -1,10 +1,11 @@
 import React from "react";
 import { Profile } from "../assets";
-import { FaUserAlt } from "react-icons/fa";
-import { MdOutlineAlternateEmail, MdWifiCalling2 } from "react-icons/md";
-import { BsWhatsapp,BsLinkedin,BsGithub } from "react-icons/bs";
-
-const About = () => {
+import { FaUserAlt,FaPhone } from "react-icons/fa";
+import { MdOutlineAlternateEmail, MdWifiCalling2, } from "react-icons/md";
+import { BsWhatsapp,BsLinkedin,BsTwitter,BsFacebook,BsInstagram } from "react-icons/bs";
+import { TbWorldWww } from "react-icons/tb";
+const About = ({shopInfo}) => {
+  const { ShopDescription, Email, Telephone, Mobile, ShopWebsite, FacebookPage, Twitter, Instagram, IsHomeServieAvailable }=shopInfo;
   return (
     <div className='w-full flex flex-col lg:flex-row px-8 md:px-10 gap-10 lg:gap-20 lg:py-20 '>
       <div className='w-full md:h-[290px] lg:w-1/3 flex flex-col items-center border border-gray-500 dark:bg-transparent rounded-md'>
@@ -16,10 +17,10 @@ const About = () => {
 
       <div className='w-full flex flex-col'>
         <p className='text-3xl font-bold text-black dark:text-white  '>
-          About Me
+        আমাদের সম্পর্কে
         </p>
         <p className='text-lg text-black dark:text-gray-400 leading-10'>
-          Full-Stack Web Developer with a proven ability to adapt and collaborate effectively in rapidly changing environments. I have dedicated hours to honing my skills through structured bootcamps, mastering JavaScript, Node.js, React.js, Next.js, and TypeScript. My passion lies in tackling web development and design challenges, with the aim of creating lasting impacts on user experience. I am eager to contribute my expertise to create innovative and seamless web solutions.
+          {ShopDescription}
         </p>
 
         <div
@@ -34,25 +35,37 @@ const About = () => {
             <FaUserAlt size={14} /> Riasat Raihan Noor
           </p>
           <p className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
-            <MdOutlineAlternateEmail size={14} /> riasatraihan@gmail.com
+            <MdOutlineAlternateEmail size={14} /> {Email}
           </p>
-          <a
+          {/* <a
             href='https://wa.me/+11 234 567 897'
             className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'
           >
             <BsWhatsapp size={14} /> +880 1672 702437
-          </a>
+          </a> */}
           <p className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
-            <MdWifiCalling2 size={14} /> +880 1534 205003
+            <MdWifiCalling2 size={14} /> {Mobile}
           </p>
-          <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/riasatraihan/" 
+          <p className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
+            <FaPhone size={14} /> {Telephone}
+          </p>
+          {ShopWebsite!=='নাই' && <a target="_blank" rel="noopener" href={ShopWebsite} 
           className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
-            <BsLinkedin size={14} /> riasatraihan
-          </a>
-          <a target="_blank" rel="noopener" href="https://github.com/riasat97" 
+            <TbWorldWww size={14} /> {ShopWebsite}
+          </a>}
+          {FacebookPage!=='নাই' && <a target="_blank" rel="noopener" href={FacebookPage} 
           className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
-            <BsGithub size={14} /> riasat97
-          </a>
+            <BsFacebook size={14} /> {FacebookPage}
+          </a>}
+          {Twitter!=='নাই' && <a target="_blank" rel="noopener" href={Twitter} 
+          className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
+            <BsTwitter size={14} /> {Twitter}
+          </a>}
+          {Instagram!=='নাই' && <a target="_blank" rel="noopener" href={Instagram} 
+          className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
+            <BsInstagram size={14} /> {Instagram}
+          </a>}
+
         </div>
       </div>
     </div>
