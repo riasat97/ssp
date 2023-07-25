@@ -16,7 +16,7 @@ const Navbar = ({ darkMode, isOpen, toggleMenu, toggleTheme }) => {
             href='/'
             className='text-2xl font-bold text-blue-500 cursor-pointer '
           >
-            Department of ICT
+            
           </a>
           </div>
           
