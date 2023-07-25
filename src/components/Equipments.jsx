@@ -3,15 +3,15 @@ import { skills, softskills } from "../data";
 import { BsCheck2All } from "react-icons/bs";
 import { config } from "daisyui";
 
-const Skills = ({shopEquipment}) => {
-  console.log(shopEquipment);
+const Skills = ({shopEquipment, baseUrl}) => {
+  const assetUrl = baseUrl + '/ShopPublicImages/asset/';
   return (
     <div className='w-full flex flex-col py-20'>
       <h4 className='text-3xl font-bold text-black dark:text-white mb-10 text-center'>
       প্রতিষ্ঠানের সরঞ্জাম
       </h4>
 
-      <div className='w-full flex flex-wrap gap-10 items-center justify-center'>
+      <div className='w-full flex flex-wrap gap-10 items-center justify-around'>
         {shopEquipment &&shopEquipment.map((equiment, index) => (
           <div
             data-aos='zoom-in-down'
@@ -20,23 +20,23 @@ const Skills = ({shopEquipment}) => {
             data-aos-duration='1000'
             data-aos-easing='ease-in-out'
             key={index}
-            className='flex gap-4 shadow-lg py-2 px-6 bg-[#04133e] rounded-full items-center hover:animate-bounce ease-in-out duration-300'
+            className='flex gap-4 shadow-lg py-8 px-8 bg-white font-bold text-black dark:text-white rounded-full border border-gray-500 items-center hover:animate-bounce ease-in-out duration-300'
           >
             <div className='w-10 h-10'>
-              <img src="" className='w-full h-full rounded-full' />
+              <img src={assetUrl+equiment.Icon} className='w-full h-full rounded-full' />
             </div>
             <div className='flex flex-col gap-1'>
               <div className='flex items-center justify-between'>
-                <p className='text-md font-semibold text-white '>
+                <p className='text-md font-semibold text-black dark:text-black'>
                   {equiment.EquipmentName}
                 </p>
                
               </div>
-              <p className='text-md font-semibold text-white mb-1'>
+              <p className='text-md font-semibold text-black dark:text-black  mb-1'>
                   {equiment.Brand}
                 </p>
-              <div className='text-md font-semibold text-white mb-1'>
-                Quantity:          {equiment.TotalUnit}
+              <div className='text-md font-semibold text-black dark:text-black mb-1'>
+                Quantity: {equiment.TotalUnit}
               </div>
             </div>
           </div>

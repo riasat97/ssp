@@ -19,8 +19,8 @@ const Footer = () => {
         </div>
 
         <div className='flex flex-col gap-5 text-md text-white '>
-          <p>riasatraihan@gmail.com</p>
-          <p>+880 0167 2702437</p>
+          <p>yxz@gmail.com</p>
+          <p>+880 0167 000000</p>
         </div>
       </div>
 
@@ -33,7 +33,7 @@ const Footer = () => {
           <a href="https://github.com/riasat97" target="_blank" rel="noopener noreferrer"> <BsGithub className='hover:scale-125' /> </a> 
         </div>
 
-        <p className='text-gray-400 text-md tracking-wider'>@2023 riasatraihan</p>
+        <p className='text-gray-400 text-md tracking-wider'>@2023 <a href="http://www.doict.gov.bd/" target="_blank" rel="noopener noreferrer"></a> doict.gov.bd</p>
       </div>
     </footer>
   );

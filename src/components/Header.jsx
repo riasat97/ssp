@@ -98,10 +98,10 @@ const Header = ({shopView,shopTeam,shopInfo,baseUrl}) => {
       </div>
 
       <div className='w-full flex-1 flex justify-center'>
-        <div className='w-[300px] h-[290px] md:w-[400px] md:h-[400px] 2xl:w-[500px] 2xl:h-[500px]  border rounded-full border-gray-600 dark:border-gray-200 relative  md:mt-20 lg:mt-0 flex items-center justify-center'>
+        <div className='w-[300px] h-[290px] md:w-[400px] md:h-[400px] 2xl:w-[500px] 2xl:h-[500px]  border rounded-full border-gray-600 dark:border-gray-200 relative  md:mt-24 lg:mt-0 flex items-center justify-center'>
           <img
             src={avatar}
-            className='w-auto h-3/4 absolute -top-5 md:top-5'
+            className=' rounded-full w-80 h-80 absolute -top-5 md:top-9'
             data-aos='fade-down'
             data-aos-offset='200'
             data-aos-delay='50'

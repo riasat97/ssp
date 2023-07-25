@@ -2,6 +2,7 @@ import React from "react";
 import { FiSun } from "react-icons/fi";
 import { MdOutlineNightlight } from "react-icons/md";
 import { BiMenu } from "react-icons/bi";
+import doict from "../assets/doict.png"
 import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = ({ darkMode, isOpen, toggleMenu, toggleTheme }) => {
@@ -9,18 +10,22 @@ const Navbar = ({ darkMode, isOpen, toggleMenu, toggleTheme }) => {
     <div className='px-0 2xl:px-40'>
       <div className='w-full items-center justify-between py-4 px-4 md:px-12'>
         <div className='flex items-center justify-between w-full'>
+          <div className="flex justify-center items-center gap-2">
+          <img className="rounded-sm" src={doict} style={{width:'45px'}} alt="" />
           <a
             href='/'
             className='text-2xl font-bold text-blue-500 cursor-pointer '
           >
-            Riasat Raihan Noor
+            Department of ICT
           </a>
+          </div>
+          
           <ul className='hidden md:flex gap-10 text-lg text-slate-800 dark:text-gray-200'>
             <li className='cursor-pointer hover:text-blue-500'>
-              <a href='#home'>Home</a>
+              <a href='#home'>হোম</a>
             </li>
             <li className='cursor-pointer hover:text-blue-500'>
-              <a href='#about'>About</a>
+              <a href='#about'>আমাদের সম্পর্কে</a>
             </li>
             <li className='cursor-pointer hover:text-blue-500'>
               <a href='#shopService'>সেবা</a>
@@ -31,9 +36,9 @@ const Navbar = ({ darkMode, isOpen, toggleMenu, toggleTheme }) => {
             <li className='cursor-pointer hover:text-blue-500'>
               <a href='#agentship'>এজেন্টশিপ</a>
             </li>
-            <li className='cursor-pointer hover:text-blue-500'>
+            {/* <li className='cursor-pointer hover:text-blue-500'>
               <a href='#hireMe'>Hire Me</a>
-            </li>
+            </li> */}
           </ul>
           <button onClick={toggleTheme} className='p-2'>
             {darkMode ? (

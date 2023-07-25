@@ -33,15 +33,15 @@ const Works = ({shopAgent,baseUrl}) => {
             data-aos-duration='1000'
             data-aos-easing='ease-in-out'
             key={index}
-            className='relative w-[350px] h-[350px] cursor-pointer shadow-xl hover:scale-110 ease-in-out duration-300 rounded-md '
+            className='relative w-[350px] h-[350px] cursor-pointer shadow-xl hover:scale-110 ease-in-out duration-300 border border-gray-600 dark:border-gray-200 rounded-lg'
           >
             <img
               src={baseUrl+'/ShopPublicImages/agent/'+agent.ProofImageSerial}
               alt={agent.IssueingOrganization}
-              className='w-full h-[250px] object-cover rounded-md '
+              className='w-full h-[250px] object-cover rounded-md p-2'
             />
 
-            <div className='w-full h-[100px] bg-white dark:bg-[#04133e]'>
+            <div className='w-full  bg-white dark:bg-[#04133e]'>
               <h4 className='text-2xl text-black dark:text-white font-semibold py-2 px-1 '>
                 {agent.IssueingOrganization}
               </h4>

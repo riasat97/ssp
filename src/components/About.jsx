@@ -1,5 +1,4 @@
 import React from "react";
-import { Profile } from "../assets";
 import { FaUserAlt,FaPhone } from "react-icons/fa";
 import { MdOutlineAlternateEmail, MdWifiCalling2, } from "react-icons/md";
 import { BsWhatsapp,BsLinkedin,BsTwitter,BsFacebook,BsInstagram } from "react-icons/bs";
@@ -10,7 +9,7 @@ const About = ({shopInfo}) => {
     <div className='w-full flex flex-col lg:flex-row px-8 md:px-10 gap-10 lg:gap-20 lg:py-20 '>
       <div className='w-full md:h-[290px] lg:w-1/3 flex flex-col items-center border border-gray-500 dark:bg-transparent rounded-md'>
         <img
-          src={Profile}
+          src=''
           className='h-[276px] p-1 rounded-md ease-in-out duration-300 hover:scale-125'
         />
       </div>
@@ -32,7 +31,7 @@ const About = ({shopInfo}) => {
           data-aos-easing='ease-in-out'
         >
           <p className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
-            <FaUserAlt size={14} /> Riasat Raihan Noor
+            <FaUserAlt size={14} /> 
           </p>
           <p className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
             <MdOutlineAlternateEmail size={14} /> {Email}
@@ -43,25 +42,25 @@ const About = ({shopInfo}) => {
           >
             <BsWhatsapp size={14} /> +880 1672 702437
           </a> */}
-          <p className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
+          {Mobile && <p className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
             <MdWifiCalling2 size={14} /> {Mobile}
-          </p>
-          <p className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
+          </p>}
+          {Telephone && <p className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
             <FaPhone size={14} /> {Telephone}
-          </p>
-          {ShopWebsite!=='নাই' && <a target="_blank" rel="noopener" href={ShopWebsite} 
+          </p>}
+          {ShopWebsite && <a target="_blank" rel="noopener" href={ShopWebsite} 
           className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
             <TbWorldWww size={14} /> {ShopWebsite}
           </a>}
-          {FacebookPage!=='নাই' && <a target="_blank" rel="noopener" href={FacebookPage} 
+          {FacebookPage && <a target="_blank" rel="noopener" href={FacebookPage} 
           className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
             <BsFacebook size={14} /> {FacebookPage}
           </a>}
-          {Twitter!=='নাই' && <a target="_blank" rel="noopener" href={Twitter} 
+          {Twitter && <a target="_blank" rel="noopener" href={Twitter} 
           className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
             <BsTwitter size={14} /> {Twitter}
           </a>}
-          {Instagram!=='নাই' && <a target="_blank" rel="noopener" href={Instagram} 
+          {Instagram && <a target="_blank" rel="noopener" href={Instagram} 
           className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
             <BsInstagram size={14} /> {Instagram}
           </a>}
