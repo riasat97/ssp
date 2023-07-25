@@ -42,7 +42,7 @@ const Header = ({shopView,shopTeam,shopInfo,baseUrl}) => {
   };
 
   return (
-    <div className='w-full flex flex-col lg:flex-row px-4 md:px-10 gap-10 2xl:gap-20 py-20'>
+    <div className='w-full flex flex-col lg:flex-row px-4 md:px-10 gap-10 2xl:gap-20 py-20 mt-10'>
       <div
         className='flex flex-col mb-20 lg:mb-0'
         data-aos='fade-down'
